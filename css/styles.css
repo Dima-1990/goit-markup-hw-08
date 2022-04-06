@@ -1,0 +1,16 @@
+body{
+    background-color: #ffffff;
+    color: #212121;
+}
+
+nav a{
+    color: #000000;
+}
+
+.logo-part{
+    color: #2196F3;
+}
+
+.contact a {
+    color: #757575;
+}
