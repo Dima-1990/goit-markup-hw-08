@@ -1,16 +1,15 @@
-body{
+.page{
     background-color: #ffffff;
-    color: #212121;
-}
-
-nav a{
-    color: #000000;
-}
-
-.logo-part{
-    color: #2196F3;
-}
-
-.contact a {
     color: #757575;
+}
+/* #757575 rezerv color  zagolovki #212121*/
+
+
+.logo{
+    font-family: Raleway, Arial;
+    color: #000000;
+    font-size: 26px;
+}
+.logo-part{
+    color:#2196F3 ;
 }
