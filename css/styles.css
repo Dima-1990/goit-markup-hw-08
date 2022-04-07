@@ -1,15 +1,174 @@
+
+:root{
+    --first-section-color: #ffffff;
+    --hover-color:#2196F3;
+    --text-color:#212121;
+
+}
+
+.top-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+
 .page{
-    background-color: #ffffff;
+    font-family: "Roboto", sans-s;
     color: #757575;
 }
-/* #757575 rezerv color  zagolovki #212121*/
 
+.link{
+    text-decoration: none; 
+}
 
+.list{
+    list-style: none;
+}
+
+/* -----------------LOGO---------------- */
 .logo{
-    font-family: Raleway, Arial;
+    font-family: "Raleway";
     color: #000000;
     font-size: 26px;
 }
+
 .logo-part{
-    color:#2196F3 ;
+    color:var(--hover-color) ;
+}
+
+/* ---------------Header---------------- */
+
+.header-link{
+    font-family: "Roboto";
+    color: var(--text-color);
+}
+
+.header-hover:hover,
+.header-hover:focus {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+div > a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:#757575;
+}
+
+/* ---------------Блок 1---------------- */
+.first-section{
+    background-color:#2F303A ;
+}
+
+.main-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--first-section-color);
+}
+
+.first-section-btn{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--first-section-color);
+    background-color: #2F303A;
+}
+
+.first-section-btn:hover,
+.first-section-btn:focus{
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+/* ---------------Блок 2---------------- */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+.quality{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.9;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--text-color);
+}
+
+.quality-inform{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+/* ---------------Блок 3---------------- */
+
+.specialization, .team{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/* ---------------Блок 4---------------- */
+
+.text-team{
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+.initials{
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.position{
+    color: #757575;
+}
+
+/* ---------------footer---------------- */
+.footer{
+    background-color:#2F303A ;
+}
+
+.coordinates{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;  
+    color: #FFFFFF;
+}
+
+address > a{
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
