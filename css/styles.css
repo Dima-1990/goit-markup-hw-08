@@ -45,6 +45,10 @@
     color: var(--text-color);
 }
 
+.header-nav .link.current{
+    color: var(--hover-color);
+} 
+
 .header-hover:hover,
 .header-hover:focus {
     color: var(--hover-color);
@@ -75,8 +79,8 @@ div > a{
 }
 
 .first-section-btn{
-    font-family: 'Roboto';
-    font-weight: 700;
+    font-family: inherit;
+    /* font-weight: 700;*/
     font-size: 16px;
     line-height: 1.9;
     display: flex;
@@ -85,6 +89,21 @@ div > a{
     letter-spacing: 0.06em;
     color: var(--first-section-color);
     background-color: #2F303A;
+}
+
+.filter-btn{
+font-family: inherit;
+font-size: 16px;
+line-height: 1.6;
+color: var(--text-color);
+background-color: #F5F4FA;
+}
+
+.filter-btn:hover,
+.filter-btn:focus{
+background-color: var(--hover-color);
+cursor: pointer;
+color: #ffffff;
 }
 
 .first-section-btn:hover,
@@ -168,7 +187,25 @@ color: var(--text-color);
 
 address > a{
 font-size: 14px;
+font-style: normal;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+
+/* -----page two, portfolio------- */
+
+.table-contents{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-color);
+}
+
+.name-product{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
 }
