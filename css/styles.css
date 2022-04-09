@@ -91,6 +91,7 @@ div > a{
 }
 
 .filter-btn{
+font-weight: 500;
 font-family: inherit;
 font-size: 16px;
 line-height: 1.6;
