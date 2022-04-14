@@ -3,7 +3,11 @@
     --first-section-color: #ffffff;
     --hover-color:#2196F3;
     --text-color:#212121;
+}
 
+h1, h2, h3, h4, h5, ul, li, p {
+    margin: 0;
+  
 }
 
 .top-text{
@@ -13,7 +17,6 @@
     letter-spacing: 0.02em;
 }
 
-
 .page{
     font-family: "Roboto", sans-s;
     color: #757575;
@@ -21,11 +24,21 @@
 
 .link{
     text-decoration: none; 
+    padding: 0;
+    margin: 0;
 }
 
 .list{
     list-style: none;
 }
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px 0 15px;
+
+} 
 
 /* -----------------LOGO---------------- */
 .logo{
@@ -65,16 +78,20 @@ div > a{
 
 /* ---------------Блок 1---------------- */
 .first-section{
-    background-color:#2F303A ;
+background-color:#2F303A ;
+text-align: center;
+/* margin-bottom: 95px; */
 }
 
 .main-title{
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--first-section-color);
+   
+
+    margin-bottom: 30px;
 }
 
 .first-section-btn{
@@ -82,9 +99,6 @@ div > a{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--first-section-color);
     background-color: #2F303A;
@@ -113,6 +127,11 @@ color: #ffffff;
 }
 
 /* ---------------Блок 2---------------- */
+
+/* .list-hidden{
+text-align: center;
+} */
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -134,6 +153,7 @@ line-height: 1.9;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--text-color);
+margin-bottom: 10px;
 }
 
 .quality-inform{
