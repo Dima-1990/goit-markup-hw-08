@@ -173,6 +173,10 @@ margin-bottom: 10px;
     color: var(--text-color);
 }
 
+.specialization-img{
+    background-color: tomato;
+}
+
 /* ---------------Блок 4---------------- */
 
 .text-team{
