@@ -59,7 +59,6 @@ h1, h2, h3, h4, h5, ul, li, p {
 .formalization{
     display: flex;
     align-items: center;
-    justify-content: ;
 } 
 
 
@@ -125,7 +124,9 @@ h1, h2, h3, h4, h5, ul, li, p {
 .first-section{
 background-color:#2F303A ;
 text-align: center;
-/* margin-bottom: 95px; */
+
+padding-bottom: 200px;
+margin-bottom: 50px;
 }
 
 .main-title{
@@ -134,6 +135,8 @@ text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--first-section-color);
+
+    padding-top: 200px;
     margin-bottom: 30px;
 }
 
@@ -144,7 +147,12 @@ text-align: center;
     line-height: 1.9;
     letter-spacing: 0.06em;
     color: var(--first-section-color);
-    background-color: #2F303A;
+    background-color: #585a6e;
+    
+    padding: 10px 32px;
+    border-radius: 4px;
+    border-color: transparent;
+
 }
 
 .filter-btn{
@@ -171,6 +179,10 @@ color: #ffffff;
 
 /* ---------------Блок 2---------------- */
 
+.list-hidden{
+    margin-bottom: 95px;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -184,6 +196,13 @@ color: #ffffff;
     margin: -1px;
 }
 
+.formalization .quality-li{
+max-width: 270px;
+}
+
+.formalization .quality-li + .quality-li{
+    margin-left: 30px;
+}
 
 .quality{
 font-weight: 700;
@@ -194,6 +213,7 @@ text-transform: uppercase;
 color: var(--text-color);
 margin-bottom: 10px;
 }
+ 
 
 .quality-inform{
     font-size: 14px;
@@ -212,8 +232,17 @@ margin-bottom: 10px;
     color: var(--text-color);
 }
 
+.specialization{
+    margin-bottom: 50px;
+}
+
 .specialization-img{
-    background-color: tomato;
+    display: flex;
+    margin-bottom: 95px;
+}
+
+.specialization-img > .li-img:not(:last-child){
+    margin-right: 30px;
 }
 
 li>img{
@@ -221,6 +250,31 @@ li>img{
 }
 
 /* ---------------Блок 4---------------- */
+
+.our-team{
+    background-color: #F5F4FA;
+}
+
+.team{
+    padding-top: 95px;
+    margin-bottom: 50px;
+} 
+
+ .team-info{
+    text-align: center;
+}
+
+.team-list{
+    display: flex;
+    margin-left: -30px;
+    padding-bottom: 200px;
+}
+
+.info-list{
+    width: calc(100% /4 - 30px);
+    margin-left: 30px;
+}
+
 
 .text-team{
     font-size: 16px;
@@ -231,15 +285,37 @@ li>img{
 .initials{
     font-weight: 500;
     color: var(--text-color);
+    margin-top: -79px;
 }
 
 .position{
     color: #757575;
+    margin-top: 10px;
+}
+
+.img-styl{
+        padding-bottom: 108px;
+        background-color: #ffffff;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
 }
 
 /* ---------------footer---------------- */
 .footer{
     background-color:#2F303A ;
+}
+
+.footer-logo{  
+font-family: "Raleway";
+ color: #ffffff;
+ font-size: 26px;
+ margin-bottom: 30px;
+
+}
+
+.wrapper{
+    display: block;
+    padding-top: 60px;
 }
 
 .coordinates{
@@ -251,6 +327,20 @@ li>img{
     letter-spacing: 0.03em;  
     color: #FFFFFF;
 }
+
+.detailed-information{
+    margin-top: 20px;
+}
+
+.detailed-information a{
+    display: block;
+    padding-top: 9px;
+    max-width: 145px;
+}
+
+.detailed-information {
+    padding-bottom:  60px;
+} 
 
 address > a{
 font-size: 14px;
