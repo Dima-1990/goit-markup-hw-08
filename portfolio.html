@@ -19,52 +19,60 @@
   <body class="page">
     <header class="page-heder">
       <!-- Шапка сайта -->
-      <nav class="header-nav">
-        <a href="/" class="logo link">
-          <span class="logo-part">Web</span>Studio</a
-        >
-        <ul class="list">
-          <li>
-            <a
-              href="./index.html"
-              class="header-link header-hover link top-text"
-            >
-              Студия
-            </a>
-          </li>
-          <li>
-            <a
-              href="./portfolio.html"
-              class="header-link header-hover link current top-text"
-            >
-              Портфолио
-            </a>
-          </li>
-          <li>
-            <a href="/" class="header-link header-hover link top-text">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="contact">
-        <a class="link header-hover" href="maito:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="link header-hover" href="tel+380961111111">
-          +38 096 111 11 11</a
-        >
+      <div class="test">
+
+      
+      <div class="container">
+        <nav class="formalization header-nav">
+          <a href="/" class="logo link">
+            <span class="logo-part">Web</span>Studio</a
+          >
+          <ul class="formalization list site-nav">
+            <li class="item">
+              <a
+                href="./index.html"
+                class="header-link header-hover link  top-text"
+              >
+                Студия
+              </a>
+            </li>
+            <li class="item">
+              <a
+                href="./portfolio.html"
+                class="header-link header-hover current link top-text"
+              >
+                Портфолио</a
+              >
+            </li>
+            <li class="item">
+              <a href="/" class="header-link header-hover link top-text">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a
+            class="contact-link link header-hover"
+            href="maito:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="contact-link link header-hover" href="tel+380961111111">
+            +38 096 111 11 11</a
+          >
+        </div>
+      </div>
       </div>
     </header>
     <!-- Фильтр из кнопок -->
     <main>
       <section class="portfolio">
         <ul class="filter list">
-          <li><button class="filter-btn" type="button">Все</button></li>
-          <li><button class="filter-btn" type="button">Веб-сайты</button></li>
-          <li><button class="filter-btn" type="button">Приложения</button></li>
-          <li><button class="filter-btn" type="button">Дизайн</button></li>
-          <li><button class="filter-btn" type="button">Маркетинг</button></li>
+          <li class="list-btn" ><button class="filter-btn" type="button">Все</button></li>
+          <li class="list-btn" ><button class="filter-btn" type="button">Веб-сайты</button></li>
+          <li class="list-btn" ><button class="filter-btn" type="button">Приложения</button></li>
+          <li class="list-btn" ><button class="filter-btn" type="button">Дизайн</button></li>
+          <li class="list-btn" ><button class="filter-btn" type="button">Маркетинг</button></li>
         </ul>
         <!-- Превью работ -->
 
@@ -144,19 +152,25 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="/" class="logo link">
-        <span class="logo-part">Web</span>Studio</a
-      >
-      <address class="footer">
-        <p class="coordinates">Киев, пр-т Леси Украинки, 26</p>
-        <a class="link header-hover" href="maito:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="link header-hover" href="tel+380961111111">
-          +38 096 111 11 11</a
-        >
-      </address>
+
+    <footer class="footer">
+      <div class="container">
+            <div class="wrapper"></div>  
+              <a href="/" class="footer-logo link">
+                <span class="logo-part">Web</span>Studio</a
+              >
+              <address class="detailed-information">
+                <p class="coordinates">Киев, пр-т Леси Украинки, 26</p>
+                <a class="link header-hover" href="maito:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+                <a class="link header-hover" href="tel+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </div>  
+              </address>
+
+      </div>
     </footer>
   </body>
 </html>
