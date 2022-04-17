@@ -346,15 +346,15 @@ color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-wrap: wrap;
     margin: -15px -15px 81px -15px;
-    mar
+    
 }
 
 .list-info{
     margin: 15px;
-    /* padding-bottom: 110px; */
-    border: 1px solid #EEEEEE;
     max-width: 370px;
+    border-bottom:1px solid #EEEEEE;
 }
+
 
 /* ----page two--btn----- */
 
