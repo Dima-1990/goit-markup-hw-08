@@ -120,6 +120,13 @@ h1, h2, h3, h4, h5, ul, li, p {
     margin-left: 50px;
 }
 
+/* ---------------Header 2--------------- */
+
+.bord-btn{
+    border-bottom: 1px solid #ECECEC ;
+}
+
+
 /* ---------------Блок 1---------------- */
 .first-section{
 background-color:#2F303A ;
@@ -280,8 +287,7 @@ li>img{
 .img-styl{
    padding-bottom: 108px;
    background-color: #ffffff;
-   border-bottom-right-radius: 4px;
-   border-bottom-left-radius: 4px;
+   border-bottom: 2px solid #ECECEC;
 }
 
 /* ---------------footer---------------- */
@@ -336,7 +342,21 @@ color: rgba(255, 255, 255, 0.6);
 
 /* -----page two, portfolio------- */
 
-/* ----btn----- */
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -15px 81px -15px;
+    mar
+}
+
+.list-info{
+    margin: 15px;
+    /* padding-bottom: 110px; */
+    border: 1px solid #EEEEEE;
+    max-width: 370px;
+}
+
+/* ----page two--btn----- */
 
 .filter{
     display: flex;
@@ -377,6 +397,9 @@ color: rgba(255, 255, 255, 0.6);
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--text-color);
+
+    margin-left: 24px;
+    margin-top: 20px;
 }
 
 .name-product{
@@ -384,4 +407,7 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
