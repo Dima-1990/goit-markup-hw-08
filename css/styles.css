@@ -193,7 +193,7 @@ max-width: 270px;
 .quality{
 font-weight: 700;
 font-size: 14px;
-line-height: 1.9;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--text-color);
@@ -355,7 +355,6 @@ color: rgba(255, 255, 255, 0.6);
 .work-info{
     margin: 15px;
     max-width: 370px;
-    border-bottom:1px solid #EEEEEE;
 }
 
 .work-info-text{
@@ -363,6 +362,10 @@ color: rgba(255, 255, 255, 0.6);
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE ;
+    border-bottom:1px solid #EEEEEE;
 }
 
 /* ----page two--btn----- */
