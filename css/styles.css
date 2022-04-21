@@ -123,12 +123,24 @@ h1, h2, h3, h4, h5, ul, li, p {
 
 /* ---------------Блок 1---------------- */
 .first-section{
-background-color:#2F303A ;
+background-color:#C4C4C4 ;
 text-align: center;
 
 padding-top: 200px;
 padding-bottom: 200px;
+
+
+background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/bghiroblok.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+
 }
+
 
 .main-title{
     font-size: 44px;
@@ -272,11 +284,31 @@ li>img{
     border-bottom: 2px solid #ECECEC;
 }
 
+.soc-list{
+display: flex;
+justify-content: center;
+}
+
+.soc-list-link{
+    width: 44px;
+    height: 44px;
+    background-color: tomato;
+    border-radius: 50%;
+    
+    margin-bottom: 30px;
+
+display: block;
+}
+
+.soc-list-item+.soc-list-item{
+    margin-left: 10px;
+}
 
 .text-team{
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 
 .initials{
