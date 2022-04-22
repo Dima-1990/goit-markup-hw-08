@@ -104,14 +104,27 @@ h1, h2, h3, h4, h5, ul, li, p {
 
     padding-bottom: 32px;
     padding-top: 32px; 
+
+    display: flex;
+    align-items: center;
+
 }
 
 .contact{
     margin-left: auto;
+    display: flex;
+    
 }
+
 
 .contact .contact-link + .contact-link{
     margin-left: 50px;
+}
+
+.icon{
+    margin: 10px;
+    fill: currentColor;
+    
 }
 
 /* ---------------Header 2--------------- */
@@ -175,6 +188,18 @@ background-image: linear-gradient(
 }
 
 /* ---------------Блок 2---------------- */
+
+.quality-li-bg{
+    display: flex;
+    background-color: #F5F4FA; 
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
 
 .list-hidden{
     padding-top: 94px;
@@ -275,11 +300,15 @@ li>img{
 .info-list{
     width: calc(100% /4 - 30px);
     margin-left: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .info-list-text{
     padding-top: 30px;
-    padding-bottom: 30px;
     background-color: #ffffff;
     border-bottom: 2px solid #ECECEC;
 }
@@ -292,12 +321,25 @@ justify-content: center;
 .soc-list-link{
     width: 44px;
     height: 44px;
-    background-color: tomato;
+    background-color: #ffffff;
     border-radius: 50%;
     
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#AFB1B8 ;
+}
 
-display: block;
+.soc-list-link:hover,
+.soc-list-link:focus{
+    background-color: var(--hover-color) ;
+    color: #ffffff;
+}
+
+
+.soc-list-icon{
+    fill: currentColor;
 }
 
 .soc-list-item+.soc-list-item{
@@ -320,6 +362,67 @@ display: block;
     color: #757575;
     margin-top: 10px;
 }
+
+/* ---------------Наши клиенты---------------- */
+
+.client-list{
+    display: flex;
+}
+
+.client-list li:not(:last-child){
+    margin-right: 30px;
+}
+
+.our-clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.client-list-stil{
+    color: #AFB1B8;
+}
+
+
+.client-list-section{
+    width: 170px;
+    height: 92px;
+
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-list-link{
+    fill: currentColor;
+}
+
+
+.client-list-stil:hover,
+.client-list-stil:focus{
+color: var(--hover-color);
+}
+
+
+.client-list-section:hover,
+.client-list-section:focus{
+border: 1px solid var(--hover-color) ;
+fill:var(--hover-color) ;
+cursor: pointer;
+} 
+
 
 
 /* ---------------footer---------------- */
@@ -369,6 +472,53 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
+
+.call{
+    display: block;
+    margin-left: 60px;
+}
+
+
+.links-social{
+    display:flex;
+}
+
+.tiatle-call{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.link-svg{
+fill: #FFFFFF;
+}
+
+.link-svg:not(:last-child){
+    margin-right: 10px;
+}
+
+.link-svg-stail{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.link-svg-stail:hover,
+.link-svg-stail:focus{
+background:var(--hover-color)
+}
+
+
 
 /* -----page two, portfolio------- */
 
