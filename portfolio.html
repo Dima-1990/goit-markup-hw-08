@@ -20,76 +20,84 @@
     <header class="page-heder">
       <!-- Шапка сайта -->
       <div class="bord-btn">
+        <div class="container">
+          <nav class="formalization header-nav">
+            <a href="/" class="logo link">
+              <span class="logo-part">Web</span>Studio</a
+            >
+            <ul class="formalization list site-nav">
+              <li class="item">
+                <a
+                  href="./index.html"
+                  class="header-link header-hover link top-text"
+                >
+                  Студия
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  href="./portfolio.html"
+                  class="header-link header-hover current link top-text"
+                >
+                  Портфолио</a
+                >
+              </li>
+              <li class="item">
+                <a href="/" class="header-link header-hover link top-text">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contact">
+            <a
+              class="contact-link link header-hover"
+              href="maito:info@devstudio.com"
+            >
+              <svg class="icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+              </svg>
 
-      <div class="container">
-        <nav class="formalization header-nav">
-          <a href="/" class="logo link">
-            <span class="logo-part">Web</span>Studio</a
-          >
-          <ul class="formalization list site-nav">
-            <li class="item">
-              <a
-                href="./index.html"
-                class="header-link header-hover link  top-text"
-              >
-                Студия
-              </a>
-            </li>
-            <li class="item">
-              <a
-                href="./portfolio.html"
-                class="header-link header-hover current link top-text"
-              >
-                Портфолио</a
-              >
-            </li>
-            <li class="item">
-              <a href="/" class="header-link header-hover link top-text">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="contact">
-          <a
-            class="contact-link link header-hover"
-            href="maito:info@devstudio.com">
-           <svg class="icon" width="16" height="12" >
-            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
-           </svg>
+              info@devstudio.com</a
+            >
 
-          info@devstudio.com</a
-          >
+            <a class="contact-link link header-hover" href="tel+380961111111">
+              <svg class="icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
 
-          <a class="contact-link link header-hover" href="tel+380961111111">
-
-            <svg class="icon" width="16" height="12" >
-            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-           </svg>
-
-            +38 096 111 11 11</a
-          >
+              +38 096 111 11 11</a
+            >
+          </div>
         </div>
-      </div>
       </div>
     </header>
     <!-- Фильтр из кнопок -->
     <main>
-      
       <section class="portfolio">
         <div class="container">
           <ul class="filter list">
-            <li class="list-btn" ><button class="filter-btn" type="button">Все</button></li>
-            <li class="list-btn" ><button class="filter-btn" type="button">Веб-сайты</button></li>
-            <li class="list-btn" ><button class="filter-btn" type="button">Приложения</button></li>
-            <li class="list-btn" ><button class="filter-btn" type="button">Дизайн</button></li>
-            <li class="list-btn" ><button class="filter-btn" type="button">Маркетинг</button></li>
+            <li class="list-btn">
+              <button class="filter-btn" type="button">Все</button>
+            </li>
+            <li class="list-btn">
+              <button class="filter-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="list-btn">
+              <button class="filter-btn" type="button">Приложения</button>
+            </li>
+            <li class="list-btn">
+              <button class="filter-btn" type="button">Дизайн</button>
+            </li>
+            <li class="list-btn">
+              <button class="filter-btn" type="button">Маркетинг</button>
+            </li>
           </ul>
           <!-- Превью работ -->
 
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="work list">
-            <li class="work-info" >
+            <li class="work-info">
               <img
                 src="./images/tehnokrak.jpg"
                 alt="Веб-сайт технокряк"
@@ -101,7 +109,7 @@
               </div>
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img
                 src="./images/pocter-new-orl.jpg"
                 alt="Постер Нового Орлеана"
@@ -115,46 +123,51 @@
               </div>
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img
                 src="./images/seabood.jpg"
                 alt="Приложение ресторана"
                 width="370"
               />
-                <div class="work-info-text">   
+              <div class="work-info-text">
                 <h2 class="table-contents">
                   Ресторан<span lang="en"> Seafood</span>
                 </h2>
                 <p class="name-product">Приложение</p>
               </div>
-
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img src="./images/nayshniki.jpg" alt="Наушники" width="370" />
               <div class="work-info-text">
-                <h2 class="table-contents">Проект <span lang="en">Prime</span></h2>
+                <h2 class="table-contents">
+                  Проект <span lang="en">Prime</span>
+                </h2>
                 <p class="name-product">Маркетинг</p>
               </div>
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img src="./images/box.jpg" alt="Две коробки" width="370" />
               <div class="work-info-text">
-                <h2 class="table-contents">Проект <span lang="en">Boxes</span></h2>
+                <h2 class="table-contents">
+                  Проект <span lang="en">Boxes</span>
+                </h2>
                 <p class="name-product">Приложение</p>
               </div>
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img src="./images/monitor.jpg" alt="Монитор" width="370" />
               <div class="work-info-text">
-                <h2 class="table-contents" lang="en">Inspiration has no Borders</h2>
+                <h2 class="table-contents" lang="en">
+                  Inspiration has no Borders
+                </h2>
                 <p class="name-product">Веб-сайт</p>
               </div>
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img src="./images/magazin.jpg" alt="Журнал" width="370" />
               <div class="work-info-text">
                 <h2 class="table-contents">
@@ -164,7 +177,7 @@
               </div>
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img src="./images/laybal.jpg" alt="Этикетка" width="370" />
               <div class="work-info-text">
                 <h2 class="table-contents">Проект <span>LAB</span></h2>
@@ -172,7 +185,7 @@
               </div>
             </li>
 
-            <li class="work-info" >
+            <li class="work-info">
               <img src="./images/notbook.jpg" alt="Ноутбук" width="370" />
               <div class="work-info-text">
                 <h2 class="table-contents" lang="en">Growing Business</h2>
@@ -182,26 +195,61 @@
           </ul>
         </div>
       </section>
-      
     </main>
 
     <footer class="footer">
       <div class="container">
-            <div class="wrapper"></div>  
-              <a href="/" class="footer-logo link">
-                <span class="logo-part">Web</span>Studio</a
-              >
-              <address class="detailed-information">
-                <p class="coordinates">Киев, пр-т Леси Украинки, 26</p>
-                <a class="link header-hover" href="maito:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-                <a class="link header-hover" href="tel+380961111111">
-                  +38 096 111 11 11</a
-                >
-              </div>  
-              </address>
+        <div class="wrapper">
+          <a href="/" class="footer-logo link">
+            <span class="logo-part">Web</span>Studio</a
+          >
+          <address class="detailed-information">
+            <p class="coordinates">Киев, пр-т Леси Украинки, 26</p>
+            <a class="link header-hover" href="maito:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="link header-hover" href="tel+380961111111">
+              +38 096 111 11 11</a
+            >
+          </address>
+        </div>
 
+        <div class="call">
+          <h1 class="tiatle-call">присоединяйтесь</h1>
+          <ul class="links-social list">
+            <li class="link-svg">
+              <div class="link-svg-stail">
+                <svg class="" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="link-svg">
+              <div class="link-svg-stail">
+                <svg class="link-svg" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="link-svg">
+              <div class="link-svg-stail">
+                <svg class="" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="link-svg">
+              <div class="link-svg-stail">
+                <svg class="" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
