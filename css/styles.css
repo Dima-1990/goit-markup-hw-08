@@ -437,12 +437,11 @@ cursor: pointer;
 font-family: "Raleway";
  color: #ffffff;
  font-size: 26px;
- margin-bottom: 30px;
 
 }
 
 .wrapper{
-    display: block;
+    display:inline-grid;
 }
 
 .coordinates{
@@ -474,9 +473,9 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .call{
-    display: block;
-    margin-left: 60px;
-}
+    display:inline-grid;
+    margin-left: 70px;
+} 
 
 
 .links-social{
