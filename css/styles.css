@@ -513,7 +513,7 @@ fill: #FFFFFF;
 }
 
 .link-svg-stail:hover,
-.link-svg-stail:focus{
+.link-svg-stail:focus {
 background:var(--hover-color); 
 cursor: pointer;
 }
