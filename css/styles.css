@@ -671,6 +671,7 @@ transition-timing-function: var(--timing-funсtion)
     transform: translateY(0%);
 
     opacity: 1;
+    transition-property:opacity;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-funсtion)
 }
