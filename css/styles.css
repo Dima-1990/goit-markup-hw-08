@@ -670,8 +670,6 @@ transition-timing-function: var(--timing-funсtion)
 .work-info:hover .work-text{
     transform: translateY(0%);
 
-    opacity: 1;
-    transition-property:opacity;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-funсtion)
 }
@@ -693,9 +691,8 @@ transition-timing-function: var(--timing-funсtion)
     position: absolute;
     top: 0;
     padding: 63px 24px;
-    height: 100%;
+    height: 101%;
     transform: translateY(100%);
-    opacity: 0;
 
     transition-duration: 250ms;
     transition-timing-function: var(--timing-funсtion)
@@ -789,6 +786,7 @@ transition-timing-function: var(--timing-funсtion)
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 250ms,visibility 250ms;
 }
 
 .modal{
@@ -812,6 +810,7 @@ transition-timing-function: var(--timing-funсtion)
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 250ms,visibility 250ms;
 }
 
 .is-hidden{
