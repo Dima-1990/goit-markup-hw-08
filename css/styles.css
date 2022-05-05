@@ -476,7 +476,7 @@ justify-content: center;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
     margin-bottom: 50px;
 }
 
@@ -621,6 +621,10 @@ fill: #FFFFFF;
     transition-timing-function: var(--timing-funсtion)
 }
 
+.links-social-svg{
+    display: flex;
+}
+
 .link-svg-stail:hover,
 .link-svg-stail:focus {
 background:var(--hover-color); 
@@ -630,6 +634,68 @@ transition-duration: 250ms;
 transition-timing-function: var(--timing-funсtion)
 }
 
+.email-container{
+    display:inline-grid;
+    margin-left: 115px;
+    position: relative;
+}
+
+.subscription{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.email{
+    height: 50px;
+    width: 358px;
+    padding: 16px 15px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color:transparent ;
+}
+
+
+.subscription-btn{
+    display:flex;
+
+    width: 200px;
+    height: 50px;
+    
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(12px)
+}
+
+.telegram{
+    margin-left: 10px;
+    fill: currentColor;
+} 
 
 
 /* -----page two, portfolio------- */
@@ -775,7 +841,7 @@ transition-timing-function: var(--timing-funсtion)
     letter-spacing: 0.03em;
 }
 
-/* ----попап----- */
+/* ----pop-up----- */
 
 .backdrop{
     position: fixed;
@@ -795,6 +861,7 @@ transition-timing-function: var(--timing-funсtion)
     width: 528px;
     background-color: #ffffff;
     border-radius: 4px;
+    padding: 40px;
 }
 
 .modal-close{
@@ -817,4 +884,47 @@ transition-timing-function: var(--timing-funсtion)
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+}
+
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.modal-input:valid{
+background-color: rgba(0, 128, 0, 0.1);
+}
+
+.modal-input:invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+
+
+.modal-input-btn{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: transparent;
 }

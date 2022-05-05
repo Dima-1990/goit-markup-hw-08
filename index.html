@@ -488,7 +488,7 @@
             <span class="logo-part">Web</span>Studio</a
           >
           <address class="detailed-information">
-            <p class="coordinates">Киев, пр-т Леси Украинки, 26</p>
+            <p class="coordinates">г. Киев, пр-т Леси Украинки, 26</p>
             <a class="link header-hover" href="maito:info@devstudio.com"
               >info@devstudio.com</a
             >
@@ -503,7 +503,7 @@
           <ul class="links-social list">
             <li class="link-svg">
               <a class="link-svg-stail" href="">
-                <div class="">
+                <div class="links-social-svg">
                   <svg class="" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                   </svg>
@@ -542,6 +542,25 @@
             </li>
           </ul>
         </div>
+
+        <div class="email-container">
+          <span class="subscription">Подпишитесь на рассылку</span>
+          <form class="test">
+            <input
+              class="email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="subscription-btn" type="submit">
+              Подписаться
+              <svg class="telegram" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -553,6 +572,34 @@
             ></use>
           </svg>
         </button>
+        <div>
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <form>
+            <label>
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                required
+              />
+            </label>
+            <label>
+              <input
+                type="tel"
+                minlength="13"
+                maxlength="13"
+                name="user-tel"
+                class="modal-input"
+                required
+                title="+380 (95) 172-30-23"
+              />
+            </label>
+            <label>
+              <input type="email" name="user-email" class="modal-input" />
+            </label>
+            <button class="modal-input-btn" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
