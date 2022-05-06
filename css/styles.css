@@ -74,13 +74,10 @@ h1, h2, h3, h4, h5, ul, li, p {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
-
     position: relative;
     
-    /* transition-property:opacity; */
     transition-duration: 250ms;
     transition-timing-function: var(--timing-funсtion);
-
     }
 
     .header-link::after {
@@ -98,8 +95,7 @@ h1, h2, h3, h4, h5, ul, li, p {
         opacity: 0;
         transition-property:opacity,width;
         transition-duration: 250ms;
-        transition-timing-function: var(--timing-funсtion);
-        
+        transition-timing-function: var(--timing-funсtion);  
     }
 
 
@@ -236,9 +232,7 @@ background-image: linear-gradient(
     padding: 10px 32px;
     border-radius: 4px;
     border-color: transparent;
-
     cursor: pointer;
-    
 }
   
 
@@ -338,7 +332,6 @@ li>img{
     position: absolute;
     width: 100%;
     bottom: 0;
-
     background-color:rgba(47, 48, 58, 0.8);
     height: 70px;
     
@@ -360,7 +353,6 @@ text-align: center;
  
 
 
-
 /* ---------------Блок 4---------------- */
 
 .team-section{
@@ -373,7 +365,7 @@ text-align: center;
     margin-bottom: 50px;
 } 
 
- .team-info{
+.team-info{
     text-align: center;
 }
 
@@ -661,35 +653,49 @@ transition-timing-function: var(--timing-funсtion)
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
+    outline: none;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color:transparent ;
+    transition: border-color 250ms;
+}
+
+.email:focus,
+.email:hover{
+    border-color: var(--hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funсtion);
 }
 
 
 .subscription-btn{
     display:flex;
-
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
     
     color: #FFFFFF;
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
     cursor: pointer;
-
-    align-items: center;
-    justify-content: center;
-
+    
     position: absolute;
     bottom: 0;
     left: 100%;
-    transform: translateX(12px)
+    transform: translateX(12px);
+    transition: box-shadow 250ms;
+    transition-timing-function: var(--timing-funсtion);
+}
+
+.subscription-btn:focus,
+.subscription-btn:hover{
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+transition-duration: 250ms;
+transition-timing-function: var(--timing-funсtion);
 }
 
 .telegram{
@@ -873,11 +879,18 @@ transition-timing-function: var(--timing-funсtion)
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 250ms,visibility 250ms;
+}
+
+.modal-close:hover> .modal-svg,
+.modal-close:focus> .modal-svg{
+    fill: var(--hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funсtion);
 }
 
 .is-hidden{
@@ -895,36 +908,136 @@ transition-timing-function: var(--timing-funсtion)
     margin-bottom: 12px;
 }
 
+.modal-label{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    cursor: pointer;
+}
+
+.input-container{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-svg{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms ;
+}
+
 .modal-input{
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 10px;
     padding-left: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 250ms;
 }
 
-.modal-input:valid{
-background-color: rgba(0, 128, 0, 0.1);
+.modal-input:focus{
+    border-color: var(--hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funсtion);
 }
 
-.modal-input:invalid {
-  background-color: rgba(255, 0, 0, 0.1);
+.modal-input:focus + .input-svg{
+    fill: var(--hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funсtion);
 }
 
+.user-texts{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 16px 12px;
 
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    transition: border-color 250ms;
+    resize: none;
+    outline: none;
+}
 
-.modal-input-btn{
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+.user-texts:focus{
+    border-color: var(--hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funсtion);
+}
 
-width: 200px;
-height: 50px;
-background: #2196F3;
+.terms-use{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-left: 7px;
+
+    border: transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.terms-use::before{
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--text-color);
+    border-radius: 3px;
+    margin-right: 7px;
+}
+
+.terms-link{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+    cursor: pointer;
+}
+
+.input-check:checked + .terms-use::before{
+    border: none;
+    background-color: var(--hover-color);
+    background-image: url(../images/heck\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funсtion);
+}
+
+.form-btn{
+    text-align: center;
+}
+
+.modal-input-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    border-radius: 4px;
+    border: transparent;
+    transition: box-shadow 250ms;
+}
+
+.modal-input-btn:hover,
+.modal-input-btn:focus{
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: transparent;
+transition-duration: 250ms;
+transition-timing-function: var(--timing-funсtion);
+
 }
