@@ -1,5 +1,14 @@
-
-    $first-section-color: #ffffff;
-    $hover-color: #2196F3;
-    $text-color: #212121;
-    $timing-funсtion: cubic-bezier(0.4, 0, 0.2, 1);
+@import "./styles";
+@import "./utils/variables";
+@import "./components/_page-header.scss";
+@import "./components/_logo.scss";
+@import "./sections/hiro";
+@import "./sections/second-block";
+@import "./sections/third-block";
+@import "./sections/fourth-block";
+@import "./sections/fifth-block";
+@import "./components/footer";
+@import "./components/model-window";
+// страница2
+@import "./portfolio/_btn-page-two";
+@import "./portfolio/work-examples";

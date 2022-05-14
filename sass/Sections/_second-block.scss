@@ -1,0 +1,39 @@
+.quality-li-bg {
+  display: flex;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.list-hidden {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.formalization .quality-li {
+  max-width: 270px;
+}
+
+.formalization .quality-li + .quality-li {
+  margin-left: 30px;
+}
+
+.quality {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.quality-inform {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}

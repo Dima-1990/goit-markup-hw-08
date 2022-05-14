@@ -1,0 +1,89 @@
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+
+.team {
+  margin-bottom: 50px;
+}
+
+.team-info {
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.info-list {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.info-list-text {
+  padding-top: 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ececec;
+}
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-list-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funсtion);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+    color: #ffffff;
+
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funсtion);
+  }
+}
+
+.soc-list-icon {
+  fill: currentColor;
+}
+
+.soc-list-item + .soc-list-item {
+  margin-left: 10px;
+}
+
+.text-team {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.initials {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.position {
+  color: #757575;
+  margin-top: 10px;
+}
