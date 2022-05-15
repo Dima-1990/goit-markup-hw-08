@@ -1,11 +1,9 @@
-:root {
-  --first-section-color: #ffffff;
-  --hover-color: #2196f3;
-  --text-color: #212121;
-  --timing-funсtion: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .page {
   font-family: "Roboto", sans-s;
   color: #757575;
 }
+
+$ColoWhite: #ffffff;
+$HoverColor: #2196f3;
+$TextColor: #212121;
+$TimingFunсtion: cubic-bezier(0.4, 0, 0.2, 1);

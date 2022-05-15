@@ -16,7 +16,7 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $TextColor;
   margin-bottom: 50px;
 }
 
@@ -25,14 +25,14 @@
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 
   &:hover,
   &:focus {
-    color: var(--hover-color);
+    color: $HoverColor;
 
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-funсtion);
+    transition-timing-function: $TimingFunсtion;
   }
 }
 
@@ -49,16 +49,16 @@
 
   transition-property: border;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 
   &:hover,
   &:focus {
-    border: 1px solid var(--hover-color);
-    fill: var(--hover-color);
+    border: 1px solid $HoverColor;
+    fill: $HoverColor;
     cursor: pointer;
 
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-funсtion);
+    transition-timing-function: $TimingFunсtion;
   }
 }
 

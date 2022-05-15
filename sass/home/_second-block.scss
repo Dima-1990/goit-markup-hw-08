@@ -1,4 +1,4 @@
-.quality-li-bg {
+.quality-list__bg {
   display: flex;
   background-color: #f5f4fa;
   width: 270px;
@@ -9,30 +9,35 @@
   border-radius: 4px;
 }
 
-.list-hidden {
+.our-qualities {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.formalization .quality-li {
+.qualities-list {
+  display: flex;
+  align-items: center;
+}
+
+.qualities-list .quality-list__element {
   max-width: 270px;
 }
 
-.formalization .quality-li + .quality-li {
+.qualities-list .quality-list__element + .quality-list__element {
   margin-left: 30px;
 }
 
-.quality {
+.quality-list__header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: $TextColor;
   margin-bottom: 10px;
 }
 
-.quality-inform {
+.quality-list__inform {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;

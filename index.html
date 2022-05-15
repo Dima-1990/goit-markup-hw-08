@@ -20,11 +20,11 @@
     <header class="page-heder">
       <!-- Шапка сайта -->
       <div class="container">
-        <nav class="formalization header-nav">
+        <nav class="header-nav">
           <a href="/" class="logo link">
             <span class="logo-part">Web</span>Studio</a
           >
-          <ul class="formalization list site-nav">
+          <ul class="header-nav list site-nav">
             <li class="item line-container">
               <div class="line-bl"></div>
               <a
@@ -77,68 +77,68 @@
 
       <section class="first-section">
         <div class="container">
-          <h1 class="main-title">
+          <h1 class="first-section__title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
-          <button class="first-section-btn" type="button" data-modal-open>
+          <button class="first-section__btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
       </section>
 
       <!-- Блок 2 -->
-      <section class="list-hidden">
+      <section class="our-qualities">
         <!-- Скрыть заглавие в css -->
         <div class="container">
           <h2 class="visually-hidden">Наши качества</h2>
-          <ul class="formalization">
-            <li class="quality-li list">
-              <div class="quality-li-bg">
+          <ul class="qualities-list">
+            <li class="quality-list__element list">
+              <div class="quality-list__bg">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="quality">Внимание к деталям</h3>
-              <p class="quality-inform">
+              <h3 class="quality-list__header">Внимание к деталям</h3>
+              <p class="quality-list__inform">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
 
-            <li class="quality-li list">
-              <div class="quality-li-bg">
+            <li class="quality-list__element list">
+              <div class="quality-list__bg">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="quality">Пунктуальность</h3>
-              <p class="quality-inform">
+              <h3 class="quality-list__header">Пунктуальность</h3>
+              <p class="quality-list__inform">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
 
-            <li class="quality-li list">
-              <div class="quality-li-bg">
+            <li class="quality-list__element list">
+              <div class="quality-list__bg">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="quality">Планирование</h3>
-              <p class="quality-inform">
+              <h3 class="quality-list__header">Планирование</h3>
+              <p class="quality-list__inform">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
 
-            <li class="quality-li list">
-              <div class="quality-li-bg">
+            <li class="quality-list__element list">
+              <div class="quality-list__bg">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="quality">Современные технологии</h3>
-              <p class="quality-inform">
+              <h3 class="quality-list__header">Современные технологии</h3>
+              <p class="quality-list__inform">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -147,39 +147,45 @@
         </div>
       </section>
       <!-- Блок 3 -->
-      <section class="specialization-section">
+      <section class="specialization">
         <div class="container">
-          <h2 class="specialization">Чем мы занимаемся</h2>
-          <ul class="specialization-img">
-            <li class="li-img list">
+          <h2 class="specialization__header">Чем мы занимаемся</h2>
+          <ul class="specialization-list">
+            <li class="specialization-list__img list">
               <img
                 src="./images/img.jpg"
                 width="370"
                 alt="Writing html for the site"
               />
-              <div class="img-title">
-                <h3 class="img-header">Десктопные приложения</h3>
+              <div class="specialization-list__container">
+                <h3 class="specialization-list__header">
+                  Десктопные приложения
+                </h3>
               </div>
             </li>
 
-            <li class="li-img list">
+            <li class="specialization-list__img list">
               <img
                 src="./images/box2.jpg"
                 width="370"
                 alt="design for mobile apps"
               />
-              <div class="img-title">
-                <h3 class="img-header">Мобильные приложения</h3>
+              <div class="specialization-list__container">
+                <h3 class="specialization-list__header">
+                  Мобильные приложения
+                </h3>
               </div>
             </li>
-            <li class="li-img list">
+            <li class="specialization-list__img list">
               <img
                 src="./images/box3.jpg"
                 width="370"
                 alt="selection of individual color schemes"
               />
-              <div class="img-title">
-                <h3 class="img-header">Дизайнерские решения</h3>
+              <div class="specialization-list__container">
+                <h3 class="specialization-list__header">
+                  Дизайнерские решения
+                </h3>
               </div>
             </li>
           </ul>

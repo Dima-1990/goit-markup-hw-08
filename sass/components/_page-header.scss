@@ -1,8 +1,3 @@
-.formalization {
-  display: flex;
-  align-items: center;
-}
-
 .page-heder .container {
   display: flex;
   align-items: center;
@@ -10,20 +5,20 @@
 
 .header-link {
   font-family: "Roboto";
-  color: var(--text-color);
+  color: $TextColor;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
   position: relative;
 
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 
   &::after {
     display: block;
     content: " ";
     width: 0%;
-    background-color: var(--hover-color);
+    background-color: $HoverColor;
     height: 4px;
     border-radius: 2px;
 
@@ -34,7 +29,7 @@
     opacity: 0;
     transition-property: opacity, width;
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-funсtion);
+    transition-timing-function: $TimingFunсtion;
   }
 
   &:hover::after {
@@ -43,7 +38,7 @@
     left: 0;
 
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-funсtion);
+    transition-timing-function: $TimingFunсtion;
   }
 }
 
@@ -53,7 +48,7 @@
 
 .line-bl {
   width: 100%;
-  background-color: #2196f3;
+  background-color: $HoverColor;
   height: 4px;
   position: absolute;
   border-radius: 4px;
@@ -65,8 +60,13 @@
   margin-right: 50px;
 }
 
-.header-nav .link.current {
-  color: var(--hover-color);
+.header-nav {
+  display: flex;
+  align-items: center;
+
+  &.link.current {
+    color: $HoverColor;
+  }
 }
 
 .contact-link {
@@ -81,25 +81,25 @@
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 }
 
 .header-hover:hover,
 .header-hover:focus {
-  color: var(--hover-color);
+  color: $HoverColor;
   cursor: pointer;
 
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 }
 
 .contact {
   margin-left: auto;
   display: flex;
-}
 
-.contact .contact-link + .contact-link {
-  margin-left: 50px;
+  & .contact-link + .contact-link {
+    margin-left: 50px;
+  }
 }
 
 .icon {

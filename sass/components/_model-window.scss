@@ -14,7 +14,7 @@
   position: relative;
   min-height: 581px;
   width: 528px;
-  background-color: #ffffff;
+  background-color: $ColoWhite;
   border-radius: 4px;
   padding: 40px;
 }
@@ -33,13 +33,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.modal-close:hover > .modal-svg,
-.modal-close:focus > .modal-svg {
-  fill: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  &:hover > .modal-svg,
+  &:focus > .modal-svg {
+    fill: $HoverColor;
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .is-hidden {
@@ -53,7 +53,7 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $TextColor;
   margin-bottom: 12px;
 }
 
@@ -87,18 +87,18 @@
   cursor: pointer;
   outline: none;
   transition: border-color 250ms;
-}
 
-.modal-input:focus {
-  border-color: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
-}
+  &:focus {
+    border-color: $HoverColor;
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 
-.modal-input:focus + .input-svg {
-  fill: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  &:focus + .input-svg {
+    fill: $HoverColor;
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .user-texts {
@@ -114,12 +114,12 @@
   transition: border-color 250ms;
   resize: none;
   outline: none;
-}
 
-.user-texts:focus {
-  border-color: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  &:focus {
+    border-color: $HoverColor;
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .terms-use {
@@ -133,15 +133,25 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-}
 
-.terms-use::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--text-color);
-  border-radius: 3px;
-  margin-right: 7px;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid $HoverColor;
+    border-radius: 3px;
+    margin-right: 7px;
+  }
+
+  .input-check:checked + &::before {
+    border: none;
+    background-color: $HoverColor;
+    background-image: url(../images/heck.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .terms-link {
@@ -149,18 +159,8 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: #2196f3;
+  color: $HoverColor;
   cursor: pointer;
-}
-
-.input-check:checked + .terms-use::before {
-  border: none;
-  background-color: var(--hover-color);
-  background-image: url(../images/heck.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
 }
 
 .form-btn {
@@ -172,7 +172,7 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: $ColoWhite;
   cursor: pointer;
 
   width: 200px;
@@ -181,11 +181,11 @@
   border-radius: 4px;
   border: transparent;
   transition: box-shadow 250ms;
-}
 
-.modal-input-btn:hover,
-.modal-input-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }

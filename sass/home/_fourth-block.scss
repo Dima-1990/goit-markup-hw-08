@@ -5,6 +5,13 @@
 }
 
 .team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $TextColor;
+
   margin-bottom: 50px;
 }
 
@@ -20,7 +27,7 @@
 .info-list {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
-  background: #ffffff;
+  background: $ColoWhite;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -28,7 +35,7 @@
 
 .info-list-text {
   padding-top: 30px;
-  background-color: #ffffff;
+  background-color: $ColoWhite;
   border-bottom: 2px solid #ececec;
 }
 
@@ -40,7 +47,7 @@
 .soc-list-link {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: $ColoWhite;
   border-radius: 50%;
 
   margin-bottom: 30px;
@@ -51,15 +58,15 @@
 
   transition-property: background-color, color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 
   &:hover,
   &:focus {
-    background-color: var(--hover-color);
-    color: #ffffff;
+    background-color: $HoverColor;
+    color: $ColoWhite;
 
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-funсtion);
+    transition-timing-function: $TimingFunсtion;
   }
 }
 
@@ -80,7 +87,7 @@
 
 .initials {
   font-weight: 500;
-  color: var(--text-color);
+  color: $TextColor;
 }
 
 .position {

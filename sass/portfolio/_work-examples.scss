@@ -15,25 +15,18 @@
 
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
-}
+  transition-timing-function: $TimingFunсtion;
 
-.work-info:hover,
-.work-info:focus {
-  cursor: pointer;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
-}
-
-.work-info:hover .work-text {
-  transform: translateY(0%);
-
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .work-top-wrap {
@@ -46,7 +39,7 @@
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $ColoWhite;
   background-color: rgba(33, 150, 243, 0.9);
 
   position: absolute;
@@ -56,11 +49,18 @@
   transform: translateY(100%);
 
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
+
+  .work-info:hover & {
+    transform: translateY(0%);
+
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .work-info-text {
-  background-color: #ffffff;
+  background-color: $ColoWhite;
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;

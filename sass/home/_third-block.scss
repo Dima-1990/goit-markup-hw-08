@@ -1,37 +1,36 @@
-.specialization-section {
+.specialization {
   padding-bottom: 94px;
 }
 
-.specialization,
-.team {
+.specialization__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $TextColor;
 }
 
-.specialization {
+.specialization__header {
   margin-bottom: 50px;
 }
 
-.specialization-img {
+.specialization-list {
   display: flex;
-}
 
-.specialization-img > .li-img:not(:last-child) {
-  margin-right: 30px;
+  & > .specialization-list__img:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 li > img {
   display: block;
 }
-.li-img {
+.specialization-list__img {
   position: relative;
 }
 
-.img-title {
+.specialization-list__container {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -39,7 +38,7 @@ li > img {
   height: 70px;
 }
 
-.img-header {
+.specialization-list__header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

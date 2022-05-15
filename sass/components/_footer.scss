@@ -6,7 +6,7 @@
 
 .footer-logo {
   font-family: "Raleway";
-  color: #ffffff;
+  color: $ColoWhite;
   font-size: 26px;
 }
 
@@ -21,7 +21,7 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $ColoWhite;
 }
 
 .detailed-information {
@@ -56,18 +56,17 @@ address > a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $ColoWhite;
   margin-bottom: 20px;
 }
 
 .link-svg {
-  fill: #ffffff;
+  fill: $ColoWhite;
 
   &:not(:last-child) {
-  margin-right: 10px;
+    margin-right: 10px;
+  }
 }
-}
-
 
 .link-svg-stail {
   display: flex;
@@ -77,20 +76,20 @@ address > a {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  fill: #ffffff;
+  fill: $ColoWhite;
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 
   &:hover,
   &:focus {
-  background: var(--hover-color);
-  cursor: pointer;
+    background: $HoverColor;
+    cursor: pointer;
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);}
-
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .links-social-svg {
@@ -109,7 +108,7 @@ address > a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $TimingFunсtion;
 
   margin-bottom: 20px;
 }
@@ -135,9 +134,9 @@ address > a {
 
 .email:focus,
 .email:hover {
-  border-color: var(--hover-color);
+  border-color: $HoverColor;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 }
 
 .subscription-btn {
@@ -148,8 +147,8 @@ address > a {
   height: 50px;
 
   font-weight: 700;
-  color: #ffffff;
-  background: #2196f3;
+  color: $ColoWhite;
+  background: $HoverColor;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -159,14 +158,14 @@ address > a {
   left: 100%;
   transform: translateX(12px);
   transition: box-shadow 250ms;
-  transition-timing-function: var(--timing-funсtion);
+  transition-timing-function: $TimingFunсtion;
 
   &:focus,
   &:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-funсtion);
-}
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
 .telegram {
