@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -43,10 +44,25 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding: 0 15px 0 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 .page {
   font-family: "Roboto", sans-s;
   color: #757575;
@@ -196,33 +212,50 @@ p {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .quality-list__element {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .quality-list__element {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+  }
+}
+
+.quality-list {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .quality-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .quality-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quality-list {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+}
 .quality-list__bg {
   display: flex;
   background-color: #f5f4fa;
-  width: 270px;
+  width: 100%;
   height: 120px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   border-radius: 4px;
-}
-
-.our-qualities {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.qualities-list {
-  display: flex;
-  align-items: center;
-}
-
-.qualities-list .quality-list__element {
-  max-width: 270px;
-}
-
-.qualities-list .quality-list__element + .quality-list__element {
-  margin-left: 30px;
 }
 
 .quality-list__header {
@@ -231,14 +264,29 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #212121;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .quality-list__header {
+    text-align: start;
+  }
 }
 
 .quality-list__inform {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.quality-list .quality-list__element:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .quality-list .quality-list__element:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .specialization {
@@ -295,9 +343,9 @@ li > img {
 }
 
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team {
@@ -307,21 +355,17 @@ li > img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  padding-bottom: 30px;
 }
 
-.team-info {
-  text-align: center;
-}
-
-.team-list {
-  display: flex;
-  margin-left: -30px;
+.text-team {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .info-list {
-  width: calc(25% - 30px);
-  margin-left: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -329,13 +373,20 @@ li > img {
 
 .info-list-text {
   padding-top: 30px;
+  padding-bottom: 24px;
   background-color: #ffffff;
-  border-bottom: 2px solid #ececec;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .soc-list {
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.soc-list .soc-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .soc-list-link {
@@ -343,7 +394,6 @@ li > img {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,17 +413,6 @@ li > img {
   fill: currentColor;
 }
 
-.soc-list-item + .soc-list-item {
-  margin-left: 10px;
-}
-
-.text-team {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
-}
-
 .initials {
   font-weight: 500;
   color: #212121;
@@ -382,6 +421,7 @@ li > img {
 .position {
   color: #757575;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .client-list {
@@ -784,6 +824,7 @@ address > a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* // страница2 */
 .img-style {
   display: block;
 }
