@@ -2,6 +2,10 @@
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team {
@@ -15,11 +19,18 @@
   padding-bottom: 30px;
 }
 
+.team-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .text-team {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 }
 
 .info-list {
@@ -27,6 +38,27 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+    margin-bottom: 30px;
+
+    &:nth-child(n + 2) {
+      margin-left: 30px;
+    }
+  }
 }
 
 .info-list-text {
@@ -35,6 +67,9 @@
   background-color: $ColoWhite;
   text-align: center;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .soc-list {

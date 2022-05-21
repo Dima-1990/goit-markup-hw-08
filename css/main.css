@@ -215,13 +215,21 @@ p {
 @media screen and (min-width: 768px) {
   .quality-list__element {
     width: calc(50% - 30px);
+  }
+  .quality-list__element:nth-child(2n) {
     margin-left: 30px;
+  }
+  .quality-list__element:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .quality-list__element {
     width: calc(25% - 30px);
+  }
+  .quality-list__element:nth-child(n+2) {
     margin-left: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -233,6 +241,7 @@ p {
   .quality-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -275,22 +284,19 @@ p {
 }
 
 .quality-list__inform {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-.quality-list .quality-list__element:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .quality-list .quality-list__element:not(:last-child) {
-    margin-bottom: 0px;
-  }
+  letter-spacing: 0.02em;
 }
 
 .specialization {
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .specialization {
+    display: initial;
+  }
 }
 
 .specialization__header {
@@ -308,6 +314,8 @@ p {
 
 .specialization-list {
   display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
 }
 .specialization-list > .specialization-list__img:not(:last-child) {
   margin-right: 30px;
@@ -319,6 +327,7 @@ li > img {
 
 .specialization-list__img {
   position: relative;
+  width: calc(33.3333333333% - 30px);
 }
 
 .specialization-list__container {
@@ -347,6 +356,12 @@ li > img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .team {
   font-weight: 700;
@@ -358,17 +373,44 @@ li > img {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .text-team {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 }
 
 .info-list {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .info-list {
+    width: calc(50% - 30px);
+  }
+  .info-list:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .info-list:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info-list {
+    width: calc(25% - 30px);
+    margin-bottom: 30px;
+  }
+  .info-list:nth-child(n+2) {
+    margin-left: 30px;
+  }
 }
 
 .info-list-text {
@@ -377,6 +419,11 @@ li > img {
   background-color: #ffffff;
   text-align: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .info-list-text {
+    margin-bottom: 0px;
+  }
 }
 
 .soc-list {

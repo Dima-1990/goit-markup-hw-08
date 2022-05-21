@@ -1,12 +1,22 @@
 .quality-list__element {
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
-    margin-left: 30px;
+
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
-    margin-left: 30px;
+    &:nth-child(n + 2) {
+      margin-left: 30px;
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -16,6 +26,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -57,15 +68,8 @@
 }
 
 .quality-list__inform {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-.quality-list .quality-list__element:not(:last-child) {
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0px;
-  }
+  letter-spacing: 0.02em;
 }

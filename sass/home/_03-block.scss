@@ -1,5 +1,9 @@
 .specialization {
-  padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: initial;
+  }
 }
 
 .specialization__header {
@@ -17,6 +21,8 @@
 
 .specialization-list {
   display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
 
   & > .specialization-list__img:not(:last-child) {
     margin-right: 30px;
@@ -28,6 +34,7 @@ li > img {
 }
 .specialization-list__img {
   position: relative;
+  width: calc(100% / 3 - 30px);
 }
 
 .specialization-list__container {
