@@ -316,9 +316,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding-bottom: 94px;
-}
-.specialization-list > .specialization-list__img:not(:last-child) {
-  margin-right: 30px;
+  width: 1170px;
 }
 
 li > img {
@@ -381,12 +379,12 @@ li > img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 768px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-info_group {
-    width: 1200px;
+    width: 1170px;
   }
 }
 
