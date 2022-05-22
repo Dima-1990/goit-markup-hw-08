@@ -203,7 +203,7 @@ p {
 }
 
 .first-section__title {
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   font-weight: 900;
@@ -578,11 +578,11 @@ li > img {
   font-size: 26px;
 }
 
-.wrapper {
+.address {
   display: inline-grid;
 }
 
-.coordinates {
+.address-detailed_coordinates {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -592,10 +592,10 @@ li > img {
   color: #ffffff;
 }
 
-.detailed-information {
+.address-detailed {
   margin-top: 20px;
 }
-.detailed-information a {
+.address-detailed a {
   display: block;
   padding-top: 9px;
   max-width: 145px;
@@ -609,16 +609,16 @@ address > a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.call {
+.social-network {
   display: inline-grid;
   margin-left: 70px;
 }
 
-.links-social {
+.social-network_links {
   display: flex;
 }
 
-.tiatle-call {
+.footer_tiatle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -628,14 +628,14 @@ address > a {
   margin-bottom: 20px;
 }
 
-.link-svg {
+.social-network-svg {
   fill: #ffffff;
 }
-.link-svg:not(:last-child) {
+.social-network-svg:not(:last-child) {
   margin-right: 10px;
 }
 
-.link-svg-stail {
+.social-network-svg_stail {
   display: flex;
   width: 44px;
   height: 44px;
@@ -648,18 +648,18 @@ address > a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-svg-stail:hover, .link-svg-stail:focus {
+.social-network-svg_stail:hover, .social-network-svg_stail:focus {
   background: #2196f3;
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.links-social-svg {
+.social-network-svg_container {
   display: flex;
 }
 
-.email-container {
+.email {
   display: inline-grid;
   margin-left: 115px;
   position: relative;
@@ -675,7 +675,7 @@ address > a {
   margin-bottom: 20px;
 }
 
-.email {
+.email_field {
   height: 50px;
   width: 358px;
   padding: 16px 15px;
@@ -691,15 +691,13 @@ address > a {
   background-color: transparent;
   transition: border-color 250ms;
 }
-
-.email:focus,
-.email:hover {
+.email_field:focus, .email_field:hover {
   border-color: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription-btn {
+.email_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -718,7 +716,7 @@ address > a {
   transition: box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscription-btn:focus, .subscription-btn:hover {
+.email_btn:focus, .email_btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

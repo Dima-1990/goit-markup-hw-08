@@ -10,11 +10,11 @@
   font-size: 26px;
 }
 
-.wrapper {
+.address {
   display: inline-grid;
 }
 
-.coordinates {
+.address-detailed_coordinates {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -24,7 +24,7 @@
   color: $ColoWhite;
 }
 
-.detailed-information {
+.address-detailed {
   margin-top: 20px;
   & a {
     display: block;
@@ -41,16 +41,16 @@ address > a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.call {
+.social-network {
   display: inline-grid;
   margin-left: 70px;
 }
 
-.links-social {
+.social-network_links {
   display: flex;
 }
 
-.tiatle-call {
+.footer_tiatle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -60,7 +60,7 @@ address > a {
   margin-bottom: 20px;
 }
 
-.link-svg {
+.social-network-svg {
   fill: $ColoWhite;
 
   &:not(:last-child) {
@@ -68,7 +68,7 @@ address > a {
   }
 }
 
-.link-svg-stail {
+.social-network-svg_stail {
   display: flex;
   width: 44px;
   height: 44px;
@@ -92,11 +92,11 @@ address > a {
   }
 }
 
-.links-social-svg {
+.social-network-svg_container {
   display: flex;
 }
 
-.email-container {
+.email {
   display: inline-grid;
   margin-left: 115px;
   position: relative;
@@ -113,7 +113,7 @@ address > a {
   margin-bottom: 20px;
 }
 
-.email {
+.email_field {
   height: 50px;
   width: 358px;
   padding: 16px 15px;
@@ -130,16 +130,16 @@ address > a {
   border-radius: 4px;
   background-color: transparent;
   transition: border-color 250ms;
+
+  &:focus,
+  &:hover {
+    border-color: $HoverColor;
+    transition-duration: 250ms;
+    transition-timing-function: $TimingFunсtion;
+  }
 }
 
-.email:focus,
-.email:hover {
-  border-color: $HoverColor;
-  transition-duration: 250ms;
-  transition-timing-function: $TimingFunсtion;
-}
-
-.subscription-btn {
+.email_btn {
   display: flex;
   align-items: center;
   justify-content: center;
