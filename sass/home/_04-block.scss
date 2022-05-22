@@ -1,4 +1,4 @@
-.team-section {
+.team {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -8,7 +8,7 @@
   }
 }
 
-.team {
+.team_header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -19,11 +19,17 @@
   padding-bottom: 30px;
 }
 
-.team-list {
+.team-info_group {
+  width: 450px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
@@ -33,19 +39,20 @@
   letter-spacing: 0.03em;
 }
 
-.info-list {
+.team-info_list {
   background: $ColoWhite;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
-
-    &:nth-child(2n) {
-      margin-left: 30px;
-    }
-
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
     }
@@ -53,36 +60,33 @@
 
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
-    margin-bottom: 30px;
-
-    &:nth-child(n + 2) {
-      margin-left: 30px;
+    &:nth-child(-n + 2) {
+      margin-bottom: 0px;
     }
   }
 }
 
-.info-list-text {
+.team-info_text {
   padding-top: 30px;
   padding-bottom: 24px;
   background-color: $ColoWhite;
   text-align: center;
-  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
   }
 }
 
-.soc-list {
+.team-soc-list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.soc-list .soc-list-item:not(:last-child) {
+.team-soc-list .team-soc-list_item:not(:last-child) {
   margin-right: 10px;
 }
 
-.soc-list-link {
+.team-soc-list_link {
   width: 44px;
   height: 44px;
   background-color: $ColoWhite;
@@ -107,16 +111,16 @@
   }
 }
 
-.soc-list-icon {
+.team-soc-list_icon {
   fill: currentColor;
 }
 
-.initials {
+.team_initials {
   font-weight: 500;
   color: $TextColor;
 }
 
-.position {
+.team_position {
   color: #757575;
   margin-top: 10px;
   margin-bottom: 16px;
