@@ -21,7 +21,7 @@
 
 .specialization-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 94px;
 
   & > .specialization-list__img:not(:last-child) {
