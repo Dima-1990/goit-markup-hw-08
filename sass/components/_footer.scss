@@ -11,7 +11,8 @@
 }
 
 .address {
-  display: inline-grid;
+  text-align: center;
+  /* display: inline-grid; */
 }
 
 .address-detailed_coordinates {
@@ -26,6 +27,7 @@
 
 .address-detailed {
   margin-top: 20px;
+  margin-bottom: 60px;
   & a {
     display: block;
     padding-top: 9px;
@@ -33,7 +35,10 @@
   }
 }
 
-address > a {
+.address-detailed > a {
+  margin-left: auto;
+  margin-right: auto;
+
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;
@@ -42,12 +47,16 @@ address > a {
 }
 
 .social-network {
-  display: inline-grid;
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+  /* display: inline-grid;
+  margin-left: 70px; */
 }
 
 .social-network_links {
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .footer_tiatle {
@@ -57,7 +66,6 @@ address > a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $ColoWhite;
-  margin-bottom: 20px;
 }
 
 .social-network-svg {
@@ -97,10 +105,17 @@ address > a {
 }
 
 .email {
+  text-align: center;
+}
+
+.email-form {
+  margin-top: 20px;
+}
+/*
   display: inline-grid;
   margin-left: 115px;
   position: relative;
-}
+ */
 
 .subscription {
   font-weight: 700;
@@ -113,9 +128,9 @@ address > a {
   margin-bottom: 20px;
 }
 
-.email_field {
+.email-form_field {
   height: 50px;
-  width: 358px;
+  width: 100%;
   padding: 16px 15px;
 
   font-weight: 400;
@@ -137,14 +152,22 @@ address > a {
     transition-duration: 250ms;
     transition-timing-function: $TimingFunсtion;
   }
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
 }
 
-.email_btn {
+.email-form_btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 200px;
   height: 50px;
+
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 700;
   color: $ColoWhite;
@@ -153,10 +176,10 @@ address > a {
   border: none;
   cursor: pointer;
 
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+   bottom: 0;
   left: 100%;
-  transform: translateX(12px);
+  transform: translateX(12px); */
   transition: box-shadow 250ms;
   transition-timing-function: $TimingFunсtion;
 
