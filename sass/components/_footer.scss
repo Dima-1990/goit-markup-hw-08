@@ -4,15 +4,33 @@
   padding-bottom: 60px;
 }
 
+.footer-pc_style {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer-logo {
   font-family: "Raleway";
   color: $ColoWhite;
   font-size: 26px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tablet_style {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .address {
   text-align: center;
-  /* display: inline-grid; */
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: start;
+  }
 }
 
 .address-detailed_coordinates {
@@ -33,6 +51,11 @@
     padding-top: 9px;
     max-width: 145px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
 }
 
 .address-detailed > a {
@@ -44,13 +67,22 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .social-network {
   text-align: center;
   margin-bottom: 60px;
-  /* display: inline-grid;
-  margin-left: 70px; */
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-bottom: 0px;
+    margin-right: 103px;
+  }
 }
 
 .social-network_links {
@@ -106,16 +138,16 @@
 
 .email {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .email-form {
   margin-top: 20px;
-}
-/*
-  display: inline-grid;
-  margin-left: 115px;
   position: relative;
- */
+}
 
 .subscription {
   font-weight: 700;
@@ -156,6 +188,10 @@
   @media screen and (min-width: 480px) {
     max-width: 450px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .email-form_btn {
@@ -175,13 +211,16 @@
   border-radius: 4px;
   border: none;
   cursor: pointer;
-
-  /* position: absolute;
-   bottom: 0;
-  left: 100%;
-  transform: translateX(12px); */
   transition: box-shadow 250ms;
   transition-timing-function: $TimingFunсtion;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    left: 100%;
+    transform: translateX(12px);
+  }
 
   &:focus,
   &:hover {

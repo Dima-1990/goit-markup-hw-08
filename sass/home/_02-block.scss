@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 4 - 15px);
+    width: calc(100% / 4 - 30px);
     &:nth-child(n + 2) {
       margin-left: 30px;
       margin-bottom: 0px;

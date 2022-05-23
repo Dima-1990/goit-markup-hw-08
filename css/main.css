@@ -225,7 +225,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .quality-list__element {
-    width: calc(25% - 15px);
+    width: calc(25% - 30px);
   }
   .quality-list__element:nth-child(n+2) {
     margin-left: 30px;
@@ -576,17 +576,33 @@ li > img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-pc_style {
+    display: flex;
+  }
+}
+
 .footer-logo {
   font-family: "Raleway";
   color: #ffffff;
   font-size: 26px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tablet_style {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .address {
   text-align: center;
-  /* display: inline-grid; */
 }
 
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: start;
+  }
+}
 .address-detailed_coordinates {
   font-family: "Roboto";
   font-style: normal;
@@ -606,6 +622,12 @@ li > img {
   padding-top: 9px;
   max-width: 145px;
 }
+@media screen and (min-width: 1200px) {
+  .address-detailed {
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
+}
 
 .address-detailed > a {
   margin-left: auto;
@@ -616,12 +638,23 @@ li > img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  .address-detailed > a {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 
 .social-network {
   text-align: center;
   margin-bottom: 60px;
-  /* display: inline-grid;
-  margin-left: 70px; */
+}
+@media screen and (min-width: 1200px) {
+  .social-network {
+    text-align: start;
+    margin-bottom: 0px;
+    margin-right: 103px;
+  }
 }
 
 .social-network_links {
@@ -673,16 +706,17 @@ li > img {
 .email {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .email {
+    text-align: start;
+  }
+}
 
 .email-form {
   margin-top: 20px;
+  position: relative;
 }
 
-/*
-  display: inline-grid;
-  margin-left: 115px;
-  position: relative;
- */
 .subscription {
   font-weight: 700;
   font-size: 14px;
@@ -719,6 +753,11 @@ li > img {
     max-width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .email-form_field {
+    width: 358px;
+  }
+}
 
 .email-form_btn {
   display: flex;
@@ -735,12 +774,17 @@ li > img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  /* position: absolute;
-   bottom: 0;
-  left: 100%;
-  transform: translateX(12px); */
   transition: box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .email-form_btn {
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    left: 100%;
+    transform: translateX(12px);
+  }
 }
 .email-form_btn:focus, .email-form_btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
