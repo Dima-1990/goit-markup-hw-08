@@ -1,6 +1,11 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .work {
@@ -9,9 +14,9 @@
   margin: -15px;
 }
 
-.work-info {
+.work-position {
   margin: 15px;
-  max-width: 370px;
+  width: 100%;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -27,14 +32,26 @@
     transition-duration: 250ms;
     transition-timing-function: $TimingFunсtion;
   }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+  }
 }
 
-.work-top-wrap {
+.work-position_content {
   position: relative;
   overflow: hidden;
 }
 
-.work-text {
+.work-position_img {
+  display: block;
+}
+
+.work-position_text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -51,7 +68,7 @@
   transition-duration: 250ms;
   transition-timing-function: $TimingFunсtion;
 
-  .work-info:hover & {
+  .work-position:hover & {
     transform: translateY(0%);
 
     transition-duration: 250ms;
@@ -59,7 +76,7 @@
   }
 }
 
-.work-info-text {
+.work_info {
   background-color: $ColoWhite;
   padding-left: 24px;
   padding-top: 20px;
@@ -68,4 +85,19 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.work_name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $TextColor;
+}
+
+.work_task {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
