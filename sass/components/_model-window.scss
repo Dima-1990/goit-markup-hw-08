@@ -8,18 +8,30 @@
   justify-content: center;
   align-items: center;
   transition: opacity 250ms, visibility 250ms;
+
+  overflow-y: scroll;
 }
 
 .modal {
   position: relative;
   min-height: 581px;
-  width: 528px;
+
+  width: 450px;
   background-color: $ColoWhite;
   border-radius: 4px;
-  padding: 40px;
+
+  margin-top: 290px;
+  margin-bottom: 20px;
+
+  padding: 40px 25px;
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    padding: 40px;
+  }
 }
 
-.modal-close {
+.modal_close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -34,8 +46,8 @@
   justify-content: center;
   align-items: center;
 
-  &:hover > .modal-svg,
-  &:focus > .modal-svg {
+  &:hover > .modal_svg,
+  &:focus > .modal_svg {
     fill: $HoverColor;
     transition-duration: 250ms;
     transition-timing-function: $TimingFunсtion;
@@ -48,7 +60,7 @@
   visibility: hidden;
 }
 
-.modal-title {
+.modal_title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -57,7 +69,7 @@
   margin-bottom: 12px;
 }
 
-.modal-label {
+.modal-field {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -65,12 +77,12 @@
   cursor: pointer;
 }
 
-.input-container {
+.modal-input_container {
   position: relative;
   margin-bottom: 10px;
 }
 
-.input-svg {
+.modal-input_svg {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -94,7 +106,7 @@
     transition-timing-function: $TimingFunсtion;
   }
 
-  &:focus + .input-svg {
+  &:focus + .modal-input_svg {
     fill: $HoverColor;
     transition-duration: 250ms;
     transition-timing-function: $TimingFunсtion;
@@ -123,7 +135,7 @@
 }
 
 .terms-use {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -131,6 +143,9 @@
 
   border: transparent;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   align-items: center;
   margin-bottom: 30px;
 
@@ -151,6 +166,10 @@
     background-position: center;
     transition-duration: 250ms;
     transition-timing-function: $TimingFunсtion;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
 }
 

@@ -1,6 +1,21 @@
 .page-heder .container {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767.98px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.header-btn {
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0px;
+  border-color: transparent;
 }
 
 .header-link {
@@ -64,6 +79,11 @@
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   &.link.current {
     color: $HoverColor;
   }
@@ -105,4 +125,8 @@
 .icon {
   margin: 10px;
   fill: currentColor;
+}
+
+.no-mob {
+  display: none;
 }

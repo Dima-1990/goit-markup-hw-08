@@ -19,12 +19,17 @@
   <body class="page">
     <header class="page-heder">
       <!-- Шапка сайта -->
-      <!-- <div class="container">
+      <div class="container">
         <nav class="header-nav">
           <a href="/" class="logo link">
             <span class="logo-part">Web</span>Studio</a
           >
-          <ul class="header-nav list site-nav">
+          <button type="button" class="header-btn">
+            <svg class="header_svg" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+          <ul class="header-nav list site-nav no-mob">
             <li class="item line-container">
               <div class="line-bl"></div>
               <a
@@ -49,7 +54,7 @@
             </li>
           </ul>
         </nav>
-        <div class="contact">
+        <div class="contact no-mob">
           <a
             class="contact-link link header-hover"
             href="maito:info@devstudio.com"
@@ -69,7 +74,7 @@
             +38 096 111 11 11</a
           >
         </div>
-      </div> -->
+      </div>
     </header>
 
     <main>
@@ -591,18 +596,18 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="submit" class="modal-close" data-modal-close>
-          <svg class="modal-svg" width="18" height="18">
+        <button type="submit" class="modal_close" data-modal-close>
+          <svg class="modal_svg" width="18" height="18">
             <use
               href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"
             ></use>
           </svg>
         </button>
         <div>
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="modal_title">Оставьте свои данные, мы вам перезвоним</p>
           <form>
-            <label class="modal-label" for="user-name">Имя</label>
-            <div class="input-container">
+            <label class="modal-field" for="user-name">Имя</label>
+            <div class="modal-input_container">
               <input
                 type="text"
                 name="user-name"
@@ -611,15 +616,15 @@
                 required
                 placeholder=" "
               />
-              <svg class="input-svg" width="18" height="18">
+              <svg class="modal-input_svg" width="18" height="18">
                 <use
                   href="./images/symbol-defs.svg#icon-person-black-18dp-1"
                 ></use>
               </svg>
             </div>
 
-            <label class="modal-label" for="user-tel">Телефон</label>
-            <div class="input-container">
+            <label class="modal-field" for="user-tel">Телефон</label>
+            <div class="modal-input_container">
               <input
                 type="tel"
                 minlength="13"
@@ -632,15 +637,15 @@
                 value="+380"
                 placeholder=" "
               />
-              <svg class="input-svg" width="18" height="18">
+              <svg class="modal-input_svg" width="18" height="18">
                 <use
                   href="./images/symbol-defs.svg#icon-phone-black-18dp-1"
                 ></use>
               </svg>
             </div>
 
-            <label class="modal-label" for="user-email">Почта</label>
-            <div class="input-container">
+            <label class="modal-field" for="user-email">Почта</label>
+            <div class="modal-input_container">
               <input
                 type="email"
                 name="user-email"
@@ -648,14 +653,14 @@
                 id="user-email"
                 placeholder=" "
               />
-              <svg class="input-svg" width="18" height="18">
+              <svg class="modal-input_svg" width="18" height="18">
                 <use
                   href="./images/symbol-defs.svg#icon-email-black-18dp-1"
                 ></use>
               </svg>
             </div>
 
-            <label class="modal-label" for="user-text">Комментарий</label>
+            <label class="modal-field" for="user-text">Комментарий</label>
             <textarea
               name="user-text"
               class="user-texts"
