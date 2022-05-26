@@ -13,22 +13,117 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="page">
     <header class="page-heder">
       <!-- Шапка сайта -->
       <div class="container">
-        <nav class="header-nav">
-          <a href="/" class="logo link">
-            <span class="logo-part">Web</span>Studio</a
-          >
-          <button type="button" class="header-btn">
-            <svg class="header_svg" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
+        <a href="/" class="logo link">
+          <span class="logo-part">Web</span>Studio</a
+        >
+        <button type="button" class="header-btn_open">
+          <svg class="header_svg" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <!-- Мобильные меню -->
+
+        <div class="header-mob_container is-hidden">
+          <div class="menu-container">
+            <button type="button" class="header-btn_close">
+              <svg class="header_svg" width="40" height="40">
+                <use
+                  href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"
+                ></use>
+              </svg>
+            </button>
+            <div class="menu-indent_top">
+              <ul class="list header-mob_list">
+                <li class="header-mob_item">
+                  <a
+                    href="./index.html"
+                    class="link header-mob_link current header-hover"
+                  >
+                    Студия
+                  </a>
+                </li>
+                <li class="header-mob_item">
+                  <a
+                    href="./portfolio.html"
+                    class="link header-mob_link header-hover"
+                  >
+                    Портфолио</a
+                  >
+                </li>
+                <li class="header-mob_item">
+                  <a href="/" class="link header-mob_link header-hover">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-indent-bottom">
+              <ul class="list header-mob-contact">
+                <li class="list header-mob-contact_item">
+                  <a
+                    class="header-mob_tell link current"
+                    href="tel+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="header-mob_mail link header-hover"
+                    href="maito:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="header-mob-soc_list list">
+                <li class="header-mob-soc_after">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-mob-soc_link link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="header-mob-soc_after">
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-mob-soc_link link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="header-mob-soc_after">
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-mob-soc_link link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="https://ua.linkedin.com/"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="header-mob-soc_link link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ПК меню -->
+        <nav>
           <ul class="header-nav list site-nav no-mob">
             <li class="item line-container">
               <div class="line-bl"></div>
@@ -54,6 +149,7 @@
             </li>
           </ul>
         </nav>
+
         <div class="contact no-mob">
           <a
             class="contact-link link header-hover"
@@ -690,5 +786,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

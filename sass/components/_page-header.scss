@@ -4,10 +4,12 @@
   @media screen and (max-width: 767.98px) {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
   }
 }
 
-.header-btn {
+.header-btn_open,
+.header-btn_close {
   padding: 0px;
   width: 40px;
   height: 40px;
@@ -16,6 +18,113 @@
   background-color: transparent;
   border: 0px;
   border-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $HoverColor;
+  }
+}
+
+.header-btn_close {
+  position: absolute;
+  right: 15px;
+}
+
+.header-mob_container {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: $ColoWhite;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+}
+
+.menu-container {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-mob_list {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  & :not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.header-mob_link {
+  color: $TextColor;
+  cursor: pointer;
+}
+
+.header-mob-contact_item {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.header-mob_tell {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 405px) {
+    font-size: 30px;
+  }
+}
+
+.header-mob_mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-mob-soc_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.header-mob-soc_after {
+  margin-right: 10px;
+  &::after {
+    content: " ";
+    margin-left: 10px;
+    width: 22px;
+    height: 0px;
+    left: 135px;
+    top: 726px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+
+.header-mob-soc_link {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $HoverColor;
 }
 
 .header-link {
@@ -84,9 +193,13 @@
     justify-content: space-between;
   }
 
-  &.link.current {
-    color: $HoverColor;
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
   }
+}
+
+.current {
+  color: $HoverColor;
 }
 
 .contact-link {
@@ -115,10 +228,12 @@
 
 .contact {
   margin-left: auto;
-  display: flex;
+  flex-wrap: wrap;
 
-  & .contact-link + .contact-link {
-    margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    & :not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -129,4 +244,20 @@
 
 .no-mob {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.header-btn_open {
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
