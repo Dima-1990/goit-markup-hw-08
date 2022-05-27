@@ -260,6 +260,11 @@ p {
     margin-right: 70px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-right: 0px;
+  }
+}
 
 .current {
   color: #2196f3;
