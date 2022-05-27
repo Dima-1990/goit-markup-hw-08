@@ -167,6 +167,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
+  margin-bottom: 30px;
 }
 .header-mob-soc_list:not(:last-child) {
   margin-right: 10px;
@@ -408,6 +409,9 @@ p {
 .quality-list {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+.quality-list > :not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .quality-list {
