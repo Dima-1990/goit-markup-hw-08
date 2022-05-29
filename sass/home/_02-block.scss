@@ -1,3 +1,13 @@
+.our-qualities {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .quality-list__element {
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 15px);
@@ -12,7 +22,12 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 4 - 30px);
+    width: 270px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+
     &:nth-child(n + 2) {
       margin-left: 30px;
       margin-bottom: 0px;
@@ -21,11 +36,10 @@
 }
 
 .quality-list {
-  margin-top: 60px;
-  margin-bottom: 60px;
-
-  & > :not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767.98px) {
+    & > :not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -36,13 +50,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-  }
-}
-
-@media screen and(min-width: 1200px) {
-  .quality-list {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    justify-content: start;
   }
 }
 

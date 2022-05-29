@@ -113,6 +113,8 @@ p {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container {
@@ -329,8 +331,12 @@ p {
   overflow: hidden;
 }
 
-.logo {
+.logo-part {
   font-family: "Raleway";
+}
+
+.logo {
+  font-weight: 700;
   color: #000000;
   font-size: 26px;
 }
@@ -352,8 +358,8 @@ p {
 .first-section {
   background-color: #c4c4c4;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -377,6 +383,8 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .first-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hiro-pk.jpg);
   }
 }
@@ -409,6 +417,28 @@ p {
   color: #ffffff;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .first-section__title {
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .first-section__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.our-qualities {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .our-qualities {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .quality-list__element {
@@ -423,7 +453,10 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .quality-list__element {
-    width: calc(25% - 30px);
+    width: 270px;
+  }
+  .quality-list__element:nth-child(-n+2) {
+    margin-bottom: 0px;
   }
   .quality-list__element:nth-child(n+2) {
     margin-left: 30px;
@@ -431,12 +464,10 @@ p {
   }
 }
 
-.quality-list {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.quality-list > :not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767.98px) {
+  .quality-list > :not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .quality-list {
@@ -448,15 +479,10 @@ p {
 @media screen and (min-width: 1200px) {
   .quality-list {
     display: flex;
+    justify-content: start;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .quality-list {
-    margin-top: 94px;
-    margin-bottom: 94px;
-  }
-}
 .quality-list__bg {
   display: flex;
   background-color: #f5f4fa;
@@ -496,7 +522,8 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .specialization {
-    display: initial;
+    display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -516,8 +543,9 @@ p {
 .specialization-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
-  width: 1170px;
+}
+.specialization-list > .specialization-list__img:not(:last-child) {
+  margin-right: 30px;
 }
 
 li > img {
@@ -526,7 +554,6 @@ li > img {
 
 .specialization-list__img {
   position: relative;
-  width: calc(33.3333333333% - 15px);
 }
 
 .specialization-list__container {
@@ -564,12 +591,18 @@ li > img {
 
 .team_header {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team_header {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -583,6 +616,11 @@ li > img {
 @media screen and (min-width: 1200px) {
   .team-info_group {
     width: 1170px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .team-info_group > .team-info_list:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -611,9 +649,6 @@ li > img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .team-info_list {
-    width: calc(25% - 15px);
-  }
   .team-info_list:nth-child(-n+2) {
     margin-bottom: 0px;
   }
@@ -695,6 +730,12 @@ li > img {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .client-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .client-list {
@@ -1017,9 +1058,14 @@ li > img {
   width: 450px;
   background-color: #ffffff;
   border-radius: 4px;
-  margin-top: 290px;
+  margin-top: 93px;
   margin-bottom: 20px;
   padding: 40px 25px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {

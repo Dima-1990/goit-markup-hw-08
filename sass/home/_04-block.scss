@@ -10,13 +10,18 @@
 
 .team_header {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: $TextColor;
 
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team-info_group {
@@ -29,6 +34,12 @@
 
   @media screen and (min-width: 1200px) {
     width: 1170px;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    & > .team-info_list:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -58,7 +69,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 4 - 15px);
     &:nth-child(-n + 2) {
       margin-bottom: 0px;
     }

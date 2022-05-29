@@ -2,7 +2,8 @@
   display: none;
 
   @media screen and (min-width: 1200px) {
-    display: initial;
+    display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -22,8 +23,10 @@
 .specialization-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
-  width: 1170px;
+
+  & > .specialization-list__img:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 li > img {
@@ -31,7 +34,6 @@ li > img {
 }
 .specialization-list__img {
   position: relative;
-  width: calc(100% / 3 - 15px);
 }
 
 .specialization-list__container {

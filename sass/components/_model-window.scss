@@ -20,10 +20,14 @@
   background-color: $ColoWhite;
   border-radius: 4px;
 
-  margin-top: 290px;
+  margin-top: 93px;
   margin-bottom: 20px;
 
   padding: 40px 25px;
+
+  @media screen and (min-width: 480px) {
+    padding: 40px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 528px;
