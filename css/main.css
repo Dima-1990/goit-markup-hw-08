@@ -74,9 +74,8 @@ p {
 }
 @media screen and (max-width: 767.98px) {
   .page-heder .container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
